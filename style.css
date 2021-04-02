@@ -1,1 +1,4 @@
-/* use the best practices */
+*, html, body {
+    margin: 0;
+    padding: 0;
+}

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>Checkout App</title>
 </head>
+
 <body>
 	<header id="head">
 		<h1>Checkout</h1>
@@ -17,8 +21,66 @@
 			</div>
 			<div class="item-name-div">
 				<p>Vintage Backbag</p>
+				<span class="yellow">$54.99</span>
+				<span class="price-cut">$94.99</span>
+			</div>
+			<div class="add-item">
+				<span>+</span>
+				<span>1</span>
+				<span>-</span>
 			</div>
 		</div>
+		<div id="semi-container">
+			<div class="item-img-div">
+				<img src="/checkout-page-app/photo2.png" class="item-image" alt="shoe image">
+			</div>
+			<div class="item-name-div">
+				<p>Levis Shoes</p>
+				<span class="yellow">$74.99</span>
+				<span class="price-cut">$124.99</span>
+			</div>
+		</div>
+		<div>
+			<hr>
+			<p>Shipping</p>
+			<span>$19</span>
+			<hr>
+			<p>Total</p>
+			<span>$148.98</span>
+		</div>
+		<div id="contact-container">
+			<h3>Contact Information</h3>
+			<p>E-mail</p>
+			<input type="email" name="email-id" id="email-box" placeholder="Enter your email...">
+			<p>Phone</p>
+			<input type="number" name="Phone" id="phone-box" placeholder="Enter your Phone...">
+		</div>
+		<div id="shipping-container">
+			<h3>Contact information</h3>
+			<p>Full name</p>
+			<input type="text" name="full name" id="name-box" placeholder="Rodney cotton">
+			<p>Address</p>
+			<input type="text" name="address" id="address-box" placeholder="Your address..">
+			<p>City</p>
+			<input type="text" name="city" id="city-box" placeholder="Your city..">
+			<p>Country</p>
+			<input type="text" list="countries" name="country" id="country-box" placeholder="Your country..">
+			<datalist id="countries">
+				<option value="India"></option>
+				<option value="England"></option>
+				<option value="Australia"></option>
+			</datalist>
+			<p>Postal code</p>
+			<input type="number" name="address" id="address-box" placeholder="Your address..">
+			<input type="checkbox" name="check" id=""> Save this information for next time
+			<button type="submit">Continue</button>
+		</div>
+		<footer id="footer">
+			<p class="footer-para">
+				created by <a href="http://github.com/Ayushsanjdev">Ayushsanjdev</a> at devchallenge.io
+			</p>
+		</footer>
 	</div>
 </body>
+
 </html>
