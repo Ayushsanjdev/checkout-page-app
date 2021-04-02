@@ -6,11 +6,13 @@
 }
 
 :root {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 body {
-    max-width: 1000px;
+    scroll-behavior: smooth;
+    max-width: 900px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,28 +25,35 @@ body {
 #head h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #4E5150;
-    margin: 1rem;
+    margin: 1.5rem 0rem;
 }
 
 #semi-container {
     background: #F2F2F2;
-    width: 30%;
+    width: 300px;
     float: right;
     border-radius: 15px;
     padding: 10px;
 }
 
+.item-img-div {
+    overflow: hidden;
+
+}
 .item-image {
     border-radius: 10px;
     width: 35%;
     float: left;
-    margin: 0.5rem 1rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .item-name-div > P {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .item-name-div > .yellow {
@@ -55,4 +64,78 @@ body {
     text-decoration: line-through;
     color: #4E5150;
     margin-left: 10px;
+}
+
+#final-checkout-container  > p {
+    padding: 10px;
+}
+
+#final-checkout-container > .right{
+    float: right;
+    margin-top: -35px;
+}
+
+.add-item {
+    border: 1px solid black;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.input-size-cart {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#left-container {
+    width: 60%;
+}
+
+#contact-container {
+    margin-bottom: 30px;
+}
+
+#contact-container > h3 {
+    margin-bottom: 10px;
+
+} 
+
+#shipping-container > h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#contact-container > input {
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    padding: 3px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #f2f2f2;
+} 
+
+#shipping-container > input {
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    padding: 3px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #f2f2f2;
+}
+
+button {
+    margin: 0 auto;
+    background-color: #F2994A;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin: 0 auto;
+}
+
+footer, a {
+    text-align: center;
+    color: lightgrey;
 }
