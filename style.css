@@ -1,11 +1,8 @@
-/* resetting layout to my style */
-
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid green;
+    /* border: 1px solid rgb(255, 0, 0); */
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 :root {
@@ -15,6 +12,7 @@
 body {
     max-width: 1000px;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-container {
@@ -30,23 +28,31 @@ body {
 
 #semi-container {
     background: #F2F2F2;
-    width: 40%;
+    width: 30%;
     float: right;
     border-radius: 15px;
     padding: 10px;
 }
 
-#semi-container .item-img-div {
-
-   
-}
-
 .item-image {
     border-radius: 10px;
-    width: 40%;
+    width: 35%;
     float: left;
+    margin: 0.5rem 1rem;
 }
 
 .item-name-div > P {
-    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item-name-div > .yellow {
+    color: orange;
+}
+
+.item-name-div p > span {
+    text-decoration: line-through;
+    color: #4E5150;
+    margin-left: 10px;
 }
