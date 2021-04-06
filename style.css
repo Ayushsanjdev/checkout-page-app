@@ -12,7 +12,6 @@
 body {
     scroll-behavior: smooth;
     max-width: 900px;
-    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     color: #4E5150;
 }
@@ -20,6 +19,7 @@ body {
 #main-container {
     width: 90%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #head h1 {
@@ -36,16 +36,7 @@ body {
     padding: 20px;
 }
 
-@media only screen and (max-width: 680px) {
-    #semi-container {
-        float: left;
-        margin-bottom: 30px;
-    }
-    :root {
-        font-size: 12px;
-    }
-    
-}
+
 
 .item-img-div {
     overflow: hidden;
@@ -149,6 +140,11 @@ button {
     border-radius: 10px;
     border-color: transparent;
     margin: 0 auto;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aqua;
 }
 
 #footer {
@@ -160,4 +156,15 @@ button {
     color: lightgrey;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 680px) {
+    #semi-container {
+        float: left;
+        margin-bottom: 30px;
+    }
+    :root {
+        font-size: 12px;
+    }
+
 }
